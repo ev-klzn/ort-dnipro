@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Objects & DOM</title>
+    <script src="./assets/js/app.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="container d-flex flex-column">
+        <header class="flex-grow-1"></header>
+        <main class="text-center">
+            <div class=""><a href="../">All lessons</a></div>    
+            <h1 class="">Угадай число от 1 до 100.</h1>
+            <div>
+                <i class="bi bi-123"></i>
+                <i class="bi bi-plus-slash-minus"></i>
+                <i class="bi bi-question"></i>
+            </div>
+            <div class="form-group" >
+                <h2><label class="p-3" for="numberInput">Ваш вариант</label></h2>
+                <input type="number" class="form-control" id="numberInput" min="1" max="100" value="0">
+                <button class="p-2 m-4 btn btn-secondary" onclick="game()">Дать ответ</button>
+            </div>        
+            <h4><output id="wrong"></output></h4>
+            <h4><output id="more"></output></h4>
+            <h4><output id="less"></output></h4>
+            <h4 class="text-danger"><output id="right"></output></h4>
+        </main>
+        <footer class="flex-grow-1"></footer>
+    </div>
+</body>
+</html>

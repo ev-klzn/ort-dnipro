@@ -1,0 +1,15 @@
+let r = +prompt('Радиус окружности, см');
+console.log(`радиус окружности: ${r}см.`);
+const pi = 3.14;
+let P = 2 * pi * r;
+P = P * 100;
+P = Math.round(P);
+P = P / 100;
+console.log(`длина окружнсти: ${P}см.`);
+alert(`длина окружнсти: ${P}см.`);
+let S = pi * (r * r);
+S = S * 100;
+S = Math.round(S);
+S = S / 100;
+console.log(`площадь круга: ${S}см².`);
+alert(`площадь круга: ${S}см².`);
